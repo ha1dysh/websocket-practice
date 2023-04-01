@@ -9,7 +9,7 @@ mongoose
   .connect(MONGO_URL)
   .then(() => {
     app.listen(PORT);
-    websocket.listen(5000);
+    websocket.listen(5566);
     console.log('mongo connected... server running...');
   })
   .catch((err) => {
