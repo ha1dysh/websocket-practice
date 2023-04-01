@@ -6,7 +6,8 @@ import Message from './models/chat.js';
 const httpServer = createServer();
 const io = new Server(httpServer, {
   cors: {
-    origin: '*',
+    origin: '*:*',
+    methods: ['GET', 'POST'],
   },
 });
 
