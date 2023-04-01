@@ -1,6 +1,7 @@
 import { NextFunction, Request, Response } from 'express';
 
 export const auth = (req: Request, res: Response, next: NextFunction) => {
+  console.log('locked')
   const { AUTH, TOKEN } = process.env;
   const { auth = '', token = '' } = req.headers;
 
